@@ -29,25 +29,6 @@ public class TeamspeakAPI {
 		this.keepRunning = keepRunning;
 	}
 	
-	public static void main(String[] args) {
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				TeamspeakAPI tsAPI = new TeamspeakAPI("37.138.114.225", true, new TSAdminAccount("serveradmin", "QyoluVCo"), true);
-				try {
-					tsAPI.start();
-					
-					tsAPI.sendMessage("hey");
-					tsAPI.sendMessage("hey2");
-					
-
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		}).start();
-	}
-	
 	public void start () throws Exception {
 		//establish connection
 		InetSocketAddress host = new InetSocketAddress(address, port);

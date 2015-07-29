@@ -1,6 +1,6 @@
-# TeamspeakAPI
+# TeamspeakAPI - Java
 
-TeamspeakAPI is an API to connect to Teamsepak Servers as an Admin.
+TeamspeakAPI is a Java API to connect to Teamsepak Servers as an Admin.
 
 # Examples
 
